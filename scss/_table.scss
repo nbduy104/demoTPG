@@ -1,0 +1,99 @@
+#content {
+  .div__title {
+    padding: 10px 20px 20px;
+    margin-bottom: 20px;
+    margin-top:60px;
+    // margin: 0;
+    // justify-content: space-between;
+    height: 50px;
+    h5 {
+      color: $purple-2;
+      font-weight: 600;
+    }
+
+    .btn__add {
+      background-color: $purple-2;
+      color: $white-0;
+      &:hover {
+        background-color:$purple-0 ;
+        color:$white-0; 
+      }
+    }
+  }
+
+  .table__containt {
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 20px;
+    .table {
+      margin-bottom: 0;
+    }
+    .div__containt {
+      padding: 10px;
+      border-radius: 8px;
+      position: relative;
+      border: 1px solid #e3e6f0;
+      box-shadow: 1px 1px 2px 1px #e1e2e1;
+    }
+    th {
+      background-color: $purple-0;
+      color: $white-0;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 300;
+      text-align: start;
+    }
+    th:first-child {
+      text-align: center;
+    }
+    .search {
+      td {
+        padding: 0;
+        &:hover i {
+          color: $purple-0;
+        }
+      }
+      .btn__search {
+        border: none;
+        padding: 0 10px;
+      }
+      .form-control {
+        border: none;
+        background: transparent;
+        padding: 0;
+        font-size: 0.8rem;
+      }
+      i {
+        font-size: 0.8rem;
+      }
+    }
+    .td__action {
+      padding: 0.7rem;
+      .row{
+          flex-wrap: nowrap;
+          margin:0;
+      }
+    }
+    #table_id_paginate .paginate_button.current {
+      background: $purple-2 !important;
+      color: $white-0 !important;
+      border:none
+    }
+    #table_id_paginate .paginate_button:hover {
+      background: $purple-0 !important ;
+      color: $white-0 !important;
+      border:none
+    }
+  }
+  i {
+    &:hover {
+      color: $purple-0;
+    }
+  }
+  .table td,
+  .table th {
+    padding-left: 10px;
+    padding-right: 40px;
+    white-space: nowrap;
+  }
+}

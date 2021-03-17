@@ -1,0 +1,119 @@
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+#sidebar__containt {
+  position: relative;
+  width: 300px;
+}
+#sidebar {
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  min-width: 250px;
+  max-width: 250px;
+  background: #f5f5f6;
+  color: #000;
+  transition: all 0.3s;
+  box-shadow: 1px 1px 2px 1px #e1e2e1;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 15px 20px;
+  background: #f5f5f6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+#sidebar ul.components li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+  //   height: 50px;
+  //   line-height: 50px;
+}
+
+#sidebar ul p {
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 0.86em;
+  display: block;
+  transition: all 0.3s;
+  i {
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+}
+
+#sidebar ul li a:hover {
+  color: $purple-3;
+  font-weight: 500;
+  background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  font-weight: 500;
+  color: $purple-3;
+  background: #e1e2e1;
+}
+#sidebar li ul li .active {
+  font-weight: 500;
+  color: $purple-3;
+  background: white;
+}
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #f5f6f5;
+  color: black;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
